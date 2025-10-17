@@ -2,7 +2,7 @@
     "id": "org.firo.firo-qt",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "23.08",
+    "runtime-version": "24.08",
     "command": "firo-qt",
     "finish-args": [
         "--socket=x11",
