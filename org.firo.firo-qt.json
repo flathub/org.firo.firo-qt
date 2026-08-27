@@ -32,8 +32,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/firoorg/firo/releases/download/v0.14.17.2/firo-0.14.17.2-linux64.tar.gz",
-                    "sha256": "153d165de6f0c0fdc20f68561711d05ac6925df143fbc2d0212b9f27e9aaabec",
+                    "url": "https://github.com/firoorg/firo/releases/download/v0.14.18.0/firo-0.14.18.0-linux64.tar.gz",
+                    "sha256": "b4b57108b66ee3ff9ec1b03dd7c24fe79acecf1110fe132f347758ae99555276",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/firoorg/firo/releases.atom",
