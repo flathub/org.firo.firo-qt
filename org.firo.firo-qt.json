@@ -35,10 +35,10 @@
                     "url": "https://github.com/firoorg/firo/releases/download/v0.14.18.2/firo-0.14.18.2-linux64.tar.gz",
                     "sha256": "3c526731d64efe8134ee58a0dedf6a8d6a3ca114a57be2604ee974c5e9656d4d",
                     "x-checker-data": {
-                        "type": "html",
-                        "url": "https://github.com/firoorg/firo/releases.atom",
-                        "version-pattern": "<title>Firo ([\\d\\.]+)</title>",
-                        "url-template": "https://github.com/firoorg/firo/releases/download/$version/firo-$version-linux64.tar.gz"
+                        "type": "json",
+                        "url": "https://api.github.com/repos/firoorg/firo/releases/latest",
+                        "version-query": "select(.draft == false and .prerelease == false) | .tag_name | capture(\"^v(?<version>[0-9]+(\\.[0-9]+)+)$\").version",
+                        "url-query": ".assets[] | select(.name == \"firo-\\($version)-linux64.tar.gz\") | .browser_download_url"
                     }
                 },
                 {
